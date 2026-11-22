@@ -1,8 +1,8 @@
 // আপডেট দিলে নিচের ভার্সন নম্বর বাড়িয়ে দিন (v1 -> v2), তাহলে মোবাইলে নতুন ভার্সন আসবে
-const CACHE = "amar-granthagar-v1";
+const CACHE = "amar-granthagar-v2";
 const FILES = ["./", "index.html", "manifest.webmanifest",
-  "icons/icon-192.png", "icons/icon-512.png", "icons/icon-maskable-512.png",
-  "icons/apple-touch-icon.png", "icons/favicon.png"];
+  "icon-192.png", "icon-512.png", "icon-maskable-512.png",
+  "apple-touch-icon.png", "favicon.png"];
 
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting()));
